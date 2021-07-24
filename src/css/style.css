@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(123, 123, 233)
+}
+
+.header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  border: 1px solid rgb(123, 123, 233);
+  border-radius: 5px;
+  padding: 50px;
+}
+
+#drop-file {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 10px;  
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  
+  border-radius: 5px;
+  border: 1px solid rgb(123, 123, 233);
+  cursor: pointer;
+  background-color: rgb(201, 201, 238);
+}
+
+#drop-file:hover {
+  background-color: rgb(123, 123, 233);
+  color:rgb(255, 255, 255)
+}
+
+#select-file {
+  position: absolute;
+  top: -30px;
+}
+
+#error {
+  margin-top: 10px;
+  margin-left: 20px;
+
+  color: red;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.loaded-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.loaded-image {
+  display: flex;
+  width: 180px;
+  height: 180px;
+  position: relative;
+  margin-top: 30px;
+
+  border: 1px solid rgb(123, 123, 233);
+}
+
+.loaded-image:nth-child(n+2) {
+  margin-left: 50px;
+}
+
+.delete {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  right: -15px;
+
+  border: 1px solid rgb(123, 123, 233);;
+  background-color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: url('../img/close.png');
+  background-position: center;
+}
+
+.image {
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+}
